@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgre-bd
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: my-ecommerce-database
+    ports:
+      - "10703:5432"
+    restart: always
+
+  pgadmin:
+    image: elestio/pgadmin:REL-8_2
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "10702:8080"
+    restart: always

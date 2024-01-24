@@ -1,0 +1,1 @@
+docker run --name postgre-bd -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -e POSTGRES_DB=my-ecommerce-database -p 10703:5432 -d postgres:13

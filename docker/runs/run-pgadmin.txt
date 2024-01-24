@@ -1,0 +1,1 @@
+docker run -d --name pgadmin -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=admin -p 10702:8080 elestio/pgadmin:REL-8_2
